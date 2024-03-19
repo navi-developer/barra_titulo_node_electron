@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Electron IPC Example</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-icon">
+            <button class="icon"><img src="src/images/icons8-whatsapp-50.png" alt=""></button>
+            <p class="title">Navi corp</p>
+        </div>
+        <div class="nav-buttons">
+            <button id="minimizeBtn" class="btnMinimize"><img src="src/images/icons8-minimizar-la-ventana-50.png"
+                    alt=""></button>
+            <button id="maximizeBtn" class="btnMaximize"><img src="src/images/icons8-maximizar-la-ventana-50.png"
+                    alt=""></button>
+            <button id="closeBtn" class="btnClose"><img src="src/images/icons8-cerrar-ventana-50.png" alt=""></button>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="section1"></section>
+        <section class="section2"></section>
+    </main>
+</body>
+<script src="./renderer.js"></script>
+
+</html>

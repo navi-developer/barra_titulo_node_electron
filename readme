@@ -1,0 +1,13 @@
+//#region  observacion para la barra de tarea 
+contextIsolation: false, //IMPORTANTE PARA LA MANIPULACION DE BARRA DE TITULO EN FALSE
+//#endregion
+//#region   especficar en html para que no mande error en consola
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+//#endregion
+//#region   siempre sale error en consola pero no siempre es el motivo
+const { ipcRenderer } = require('electron/renderer');
+//#endregion
+//#region   en la version trabajada no marca automatico se tiene que escribir
+win.minimize();
+//#endregion

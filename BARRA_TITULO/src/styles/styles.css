@@ -1,0 +1,107 @@
+img{
+    width: 25px;
+    height: 25px;
+}
+nav{
+    -webkit-app-region: drag
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    color: grey;
+}
+nav{
+    /* border: 1px solid blue; */
+    background: #dbdbdb;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-top: -7px;
+    margin-left: -7px;
+    margin-right: -7px;
+}
+:not(nav){
+    -webkit-app-region:no-drag;
+}
+.nav-buttons{
+    /* border: 1px solid red; */
+    margin-left: auto;
+    display: flex;
+}
+.nav-icon{
+    /* border: 1px solid red; */
+    margin-right: auto;
+    display: flex;
+}
+.icon{
+    height: 45px;
+    width: 45px;
+    background: #dbdbdb;
+    margin-top: 2px;
+}
+.title{
+    font-family: JetBrains Mono SemiBold;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.nav-icon > button{
+    border: none;
+    margin-right: 10px;
+    aspect-ratio: 1;
+    color:#ededed;
+    border-radius: 3px;
+    /* height: 100%; */
+}
+.nav-buttons > button{
+    /* background: #2c2c2c; */
+    transition: background .2s ease;
+    background: #dbdbdb;
+    border: none;
+    height: 100%;
+    margin-right: 3px;
+    aspect-ratio: 1;
+    color:#ededed;
+    border-radius: 3px;
+    /* font-size: 5px; */
+}
+.nav-buttons > button:active{
+    background: #fff8f8;
+}
+.btnMinimize:hover{
+    transition: .2s ease;
+    background: #cec7c7;
+    cursor: pointer;
+}
+.btnMaximize:hover{
+    transition: .2s ease;
+    background: #7f91cd;
+    cursor: pointer;
+}
+.btnClose:hover{
+    transition: .2s ease;
+    background: #f38d8d;
+    cursor: pointer;
+}
+/* ============================================================== */
+.main{
+    margin-top: 7px;
+    background: #7f91cd;
+    display: flex;
+    width: 100%;
+    height: 650px;
+    border: 1px solid red;
+    padding: 1rem;
+}
+.main > .section1{
+    flex: auto;
+    background-color: #488baf;
+    width: 31rem;
+}
+.main > .section2{
+    flex: auto;
+    background-color: #b6703e;
+    width: 10rem;
+}

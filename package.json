@@ -1,0 +1,14 @@
+{
+  "name": "electronjs-v-29.1.4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./BARRA_TITULO/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "ivansalcedo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.1.4"
+  }
+}
